@@ -11,56 +11,56 @@ llamar etiqueta background-image: url()*/
     padding: 0;
 }
 body{
-    background-color: #b61919df;
-    width: 100%;
-    height: 100vh;
+    background-color: #171717;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr;
 }
 .imagenFondo{
     background-image: url(../images/fondo3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: luminosity;
+    background-attachment: fixed;
+}
+.imagenFondo2{
+    background-image: url(../images/imagenFondo2.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 header{
-    background-color:#2C3333;
+    background-color:#222831;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 ul{
     list-style: none;
-    color: antiquewhite;
+    color: white;
 }
 li{
     display: inline-block;
     font-size: 15px;
-    color: antiquewhite;
+    font-weight: bold;
+    color: white;
     margin-left: 130px;
     padding: 10px;
 }
-.barraNav li a{
+.barraN li a{
     text-decoration: none;
     color: white;
+    justify-content: center;
 }
 h1{
     margin-top: 30px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color:white;
     font-family: Arial, Helvetica, sans-serif;;
     font-size: 65px;
     transition: transform 0.4s;
 }
 h1:hover{
     transform:scale(1.3);
-}
-p{
-    color: white;
-    padding: 10px;
-    border: 10px solid white;
-    border-radius: 1cm;
-    margin-right: 150px;
-    margin-top: 40px;
-    margin-left: 150px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .cuartoParrafo{
     margin: 10px;
@@ -275,6 +275,21 @@ h3{
     border: 0px;
     font-size: 20px;
     color: white;
+    text-align: start;
+}
+footer{
+    background-color: #2C3333;
+    padding: 1em 0;
+    text-align: center;
+    display: contents;
+}
+.copy{
+        color: white;
+        padding: 10px;
+        margin-right: 150px;
+        margin-top: 40px;
+        margin-left: 150px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .redesSociales a{
     color: white;
@@ -323,7 +338,7 @@ h3{
     width: 40%;
     height: 100vh;
     overflow: hidden;
-    float: left;
+    float: right;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -343,4 +358,236 @@ h3{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: center;
+}
+.nav-link{
+    color: white;
+}
+.populares{
+    margin-top: 30px;
+    align-items: start;
+    justify-content: start;
+    text-align: center;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    transition: transform 0.3s;
+}
+h1:hover{
+    transform:scale(0.95);
+}
+.popularesGrid{
+    display: grid;
+    margin: 40px 0 40px 0;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 1px 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas:
+    "peli7 peli8 peli9 peli10 peli11"
+    "peli12 peli13 peli14 peli15 peli16"
+    "peli17 peli18 peli19 peli20 peli21"
+    "peli22 peli23 peli24 peli25 peli26"
+    "peli27 peli28 peli29 peli30 peli31"
+}
+.peli7{
+    grid-area: peli7;
+}
+.peli8{
+    grid-area: peli8;
+}
+.peli9{
+    grid-area: peli9;
+}
+.peli10{
+    grid-area: peli10;
+}
+.peli11{
+    grid-area: peli11;
+}
+.peli12{
+    grid-area: peli12;
+}
+.peli13{
+    grid-area: peli13;
+}
+.peli14{
+    grid-area: peli14;
+}
+.peli15{
+    grid-area: peli15;
+}
+.peli16{
+    grid-area: peli16;
+}
+.peli17{
+    grid-area: peli17;
+}
+.peli18{
+    grid-area: peli18;
+}
+.peli19{
+    grid-area: peli19;
+}
+.peli20{
+    grid-area: peli20;
+}
+.peli21{
+    grid-area: peli21;
+}
+.peli22{
+    grid-area: peli22;
+}
+.peli23{
+    grid-area: peli23;
+}
+.peli24{
+    grid-area: peli24;
+}
+.peli25{
+    grid-area: peli25;
+}
+.peli26{
+    grid-area: peli26;
+}
+.peli27{
+    grid-area: peli27;
+}
+.peli28{
+    grid-area: peli28;
+}
+.peli29{
+    grid-area: peli29;
+}
+.peli30{
+    grid-area: peli30;
+}
+.peli31{
+    grid-area: peli31;
+}
+.peli7 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli8 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli9 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli10 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli11 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli12 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli13 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli14 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli15 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli16 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli17 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli18 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli19 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli20 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli21 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli22 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli23 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli24 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli25 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli26 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli27 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli28 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli29 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli30 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.peli31 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
 }

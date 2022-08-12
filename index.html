@@ -15,13 +15,23 @@
     </head>
     <body class="imagenFondo">
     <header>
-        <nav class="barraNav">
-            <ul>
-                <li> <a href="index.html"> INICIO </a> </li>
-                <li> <a href="./sections/new.html"> NUEVOS </a> </li>
-                <li> <a href="./sections/populares.html"> POPULARES </a> </li>
-                <li> <a href="./sections/watchlist.html"> WATCH LIST </a> </li>
-                <li> <a href="./sections/usuario.html"> USUARIO </a> </li>
+        <nav class="barraN">
+            <ul class="nav-nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="*">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./sections/new.html">Nuevos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./sections/populares.html">Populares</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./sections/watchlist.html">Watchlist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sections/usuario.html">Usuario</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -29,13 +39,31 @@
         <h1 class="tituloPrincipal"> Qué Vemos? </h1>
     </main>
     <section>
-        <p>Qué vemos?, es una web fácil de usar y muy eficaz, podrás elegir tus proveedores favoritos de series y películas. Podrás encontar que hay de nuevo en los sitios legales de streaming. Organizamos listas de películas y de series por popularidad para ayudarte a ver tus películas online favoritas y las mejores series online en castellano.</p>
+        <form class="iniciarSesion">
+            <div class="form-group">
+              <label for="Email">Iniciar sesión</label>
+              <input type="email" class="form-control" id="Email" aria-describedby="email" placeholder="Ingrese correo">
+            </div>
+            <div class="form-group">
+              <label for="Password">Contraseña</label>
+              <input type="password" class="form-control" id="Password" placeholder="Contraseña">
+              <input type="checkbox" name="Recordarme" id="Recordarme">
+              <label for="Recordarme"> Recordarme </label>
+            </div>
+            <div class="form-group form-check">
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
     </section>
     <footer> 
+        <h3>Nuestras redes</h3>
         <div class="redesSociales">
             <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="contenedor">
+            <p class="copy"> © 2022 copyright ~ Todos los derechos reservados </p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
